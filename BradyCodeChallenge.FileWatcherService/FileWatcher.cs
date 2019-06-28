@@ -19,6 +19,7 @@ namespace BradyCodeChallenge.FileWatcherService
         private bool _enabled = true;
         private readonly string _outputPath = ConfigurationManager.AppSettings["FolderForOutput"];
         private readonly string _inputPath = ConfigurationManager.AppSettings["FolderToWatch"];
+        private readonly string _referenceDataPath = ConfigurationManager.AppSettings["ReferenceData"];
 
         public FileWatcher()
         {
@@ -50,7 +51,7 @@ namespace BradyCodeChallenge.FileWatcherService
 
         private void WatcherOnCreated(object sender, FileSystemEventArgs fileSystemEventArgs)
         {
-            _calculateData.CalculateGenerationOutput(fileSystemEventArgs, ConfigurationManager.AppSettings["ReferenceData"], _outputPath);
+            _calculateData.CalculateGenerationOutput(fileSystemEventArgs, _referenceDataPath, _outputPath);
         }
     }
 }

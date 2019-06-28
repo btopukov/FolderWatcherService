@@ -12,12 +12,10 @@ namespace BradyCodeChallenge
 {
     public class ApplicationRun
     {
-        private readonly IWatcher _watcher;
         private readonly ICalculateData _calculateData;
 
-        public ApplicationRun(IWatcher watcher, ICalculateData calculateData)
+        public ApplicationRun(ICalculateData calculateData)
         {
-            _watcher = watcher;
             _calculateData = calculateData;
         }
 
@@ -27,7 +25,7 @@ namespace BradyCodeChallenge
             // Run service
             HostFactory.Run(x =>
             {
-                x.Service<FileWatcher>(s =>
+                x.Service<IWatcher>(s =>
                 {
                     s.ConstructUsing(name =>
                         new FileWatcher(_calculateData));

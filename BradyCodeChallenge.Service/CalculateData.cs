@@ -11,16 +11,17 @@ using BradyCodeChallenge.Infrastructure.Models.Output;
 using BradyCodeChallenge.Infrastructure.Models.ReferenceData;
 using BradyCodeChallenge.Infrastructure.Models.ReferenceDataMap;
 using BradyCodeChallenge.Service.StaticData;
+using Day = BradyCodeChallenge.Infrastructure.Models.Output.Day;
 using ValueFactor = BradyCodeChallenge.Infrastructure.Models.ReferenceDataMap.ValueFactor;
 
 namespace BradyCodeChallenge.Service
 {
     public class CalculateData : ICalculateData
     {
-        private const string fileName = "GenerationOutput";
-        private const string extension = ".xml";
+        private const string FileName = "GenerationOutput";
+        private const string Extension = ".xml";
         private readonly ISerializer _serializer;
-        private static List<Infrastructure.Models.Output.Day> maxEmissionsDays = new List<Infrastructure.Models.Output.Day>();
+        internal static List<Day> MaxEmissionsDays = new List<Day>();
 
         public CalculateData(ISerializer serializer)
         {
@@ -50,7 +51,6 @@ namespace BradyCodeChallenge.Service
         {
             Totals totals = new Totals();
             List<ActualHeatRates> actualHeatRates = new List<ActualHeatRates>();
-            List<Infrastructure.Models.Output.Day> maxEmDays = new List<Infrastructure.Models.Output.Day>();
             MaxEmissionGenerators maxEmissionGenerators = new MaxEmissionGenerators();
 
             foreach (var windGenerator in generationReport.Wind.WindGenerator)
@@ -92,28 +92,28 @@ namespace BradyCodeChallenge.Service
 
                 totals.Generator.Add(generator);
             }
-
-            maxEmDays = maxEmissionsDays.OrderByDescending(x => x.Emission).GroupBy(x => x.Date).Select(b=>b.First()).ToList();
-            maxEmissionGenerators.Day = maxEmDays;
+            
+            maxEmissionGenerators.Day = MaxEmissionsDays.OrderByDescending(x => x.Emission).GroupBy(x => x.Date).Select(b => b.First()).ToList(); 
 
             return new GenerationOutput() {Totals = totals, ActualHeatRates = actualHeatRates, MaxEmissionGenerators = maxEmissionGenerators };
         }
 
         private static decimal CalculateTotalGenerationValue(Generation generation, string generationType, ReferenceData referenceData, decimal? emissions)
         {
+            //TODO check if there are days
             List<ReferenceDataMap> referenceDataMap = PopulateStaticData.GeneratorTypesMapData();
             decimal calcForGeneration = 0;
             foreach (var day in generation.Day)
             {
                 calcForGeneration += day.Energy * day.Price * GetValueFactor(generationType, referenceData, referenceDataMap);
-                var dayForMaxEmission = new Infrastructure.Models.Output.Day
+                var dayForMaxEmission = new Day
                 {
                     Date = day.Date,
                     Name = generationType,
                     Emission = CalculateEmission(day, generationType, referenceData, referenceDataMap, emissions) //TODO refactor this
                 };
 
-                maxEmissionsDays.Add(dayForMaxEmission);
+                MaxEmissionsDays.Add(dayForMaxEmission);
             }
 
             return calcForGeneration;
@@ -182,7 +182,7 @@ namespace BradyCodeChallenge.Service
         {
             var date = DateTime.Now;
 
-            var outputPathName = $"{outputPath}{fileName}{date.ToShortDateString()}{date:HH.mm.ss}{extension}";
+            var outputPathName = $"{outputPath}{FileName}{date.ToShortDateString()}{date:HH.mm.ss}{Extension}";
             _serializer.SerializeToFile<GenerationOutput>(output, outputPathName);
         }
     }
