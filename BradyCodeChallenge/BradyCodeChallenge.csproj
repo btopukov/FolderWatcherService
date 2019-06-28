@@ -68,17 +68,17 @@
       <Project>{D3EBE6D4-2AD3-40A5-B493-E045922E6244}</Project>
       <Name>BradyCodeChallenge.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BradyCodeChallenge.Service\BradyCodeChallenge.Service.csproj">
-      <Project>{c1303f76-f336-4774-9808-dad4bac5f389}</Project>
-      <Name>BradyCodeChallenge.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FileWatcherService\BradyCodeChallenge.FileWatcherService.csproj">
+    <ProjectReference Include="..\BradyCodeChallenge.FileWatcherService\BradyCodeChallenge.FileWatcherService.csproj">
       <Project>{FE499F50-B3BA-4DAE-8490-E4A6AECFBA89}</Project>
       <Name>BradyCodeChallenge.FileWatcherService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FolderWatcherService.Infrastructure\BradyCodeChallenge.Infrastructure.csproj">
-      <Project>{154dbb91-1794-4a33-b48c-d030197d1382}</Project>
+    <ProjectReference Include="..\BradyCodeChallenge.Infrastructure\BradyCodeChallenge.Infrastructure.csproj">
+      <Project>{154DBB91-1794-4A33-B48C-D030197D1382}</Project>
       <Name>BradyCodeChallenge.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BradyCodeChallenge.Service\BradyCodeChallenge.Service.csproj">
+      <Project>{c1303f76-f336-4774-9808-dad4bac5f389}</Project>
+      <Name>BradyCodeChallenge.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

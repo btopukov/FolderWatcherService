@@ -66,13 +66,13 @@
       <Project>{D3EBE6D4-2AD3-40A5-B493-E045922E6244}</Project>
       <Name>BradyCodeChallenge.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BradyCodeChallenge.Infrastructure\BradyCodeChallenge.Infrastructure.csproj">
+      <Project>{154dbb91-1794-4a33-b48c-d030197d1382}</Project>
+      <Name>BradyCodeChallenge.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BradyCodeChallenge.Service\BradyCodeChallenge.Service.csproj">
       <Project>{C1303F76-F336-4774-9808-DAD4BAC5F389}</Project>
       <Name>BradyCodeChallenge.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FolderWatcherService.Infrastructure\BradyCodeChallenge.Infrastructure.csproj">
-      <Project>{154DBB91-1794-4A33-B48C-D030197D1382}</Project>
-      <Name>BradyCodeChallenge.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

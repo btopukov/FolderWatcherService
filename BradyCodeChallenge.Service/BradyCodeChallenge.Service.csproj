@@ -51,7 +51,7 @@
       <Project>{D3EBE6D4-2AD3-40A5-B493-E045922E6244}</Project>
       <Name>BradyCodeChallenge.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FolderWatcherService.Infrastructure\BradyCodeChallenge.Infrastructure.csproj">
+    <ProjectReference Include="..\BradyCodeChallenge.Infrastructure\BradyCodeChallenge.Infrastructure.csproj">
       <Project>{154DBB91-1794-4A33-B48C-D030197D1382}</Project>
       <Name>BradyCodeChallenge.Infrastructure</Name>
     </ProjectReference>
