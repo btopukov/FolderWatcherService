@@ -1,0 +1,10 @@
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\bin\Debug\FileWatcherService.exe.config
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\bin\Debug\FileWatcherService.exe
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\bin\Debug\FileWatcherService.pdb
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\obj\Debug\FileWatcherService.csprojAssemblyReference.cache
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\obj\Debug\FileWatcherService.csproj.CoreCompileInputs.cache
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\obj\Debug\FileWatcherService.csproj.CopyComplete
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\obj\Debug\FileWatcherService.exe
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\obj\Debug\FileWatcherService.pdb
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\bin\Debug\FolderWatcherService.Infrastructure.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FileWatcherService\bin\Debug\FolderWatcherService.Infrastructure.pdb

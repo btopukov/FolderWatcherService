@@ -1,0 +1,6 @@
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FolderWatcherService.Infrastructure\bin\Debug\FolderWatcherService.Infrastructure.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FolderWatcherService.Infrastructure\bin\Debug\FolderWatcherService.Infrastructure.pdb
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FolderWatcherService.Infrastructure\obj\Debug\FolderWatcherService.Infrastructure.csprojAssemblyReference.cache
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FolderWatcherService.Infrastructure\obj\Debug\FolderWatcherService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FolderWatcherService.Infrastructure\obj\Debug\FolderWatcherService.Infrastructure.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\FolderWatcherService.Infrastructure\obj\Debug\FolderWatcherService.Infrastructure.pdb

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{154DBB91-1794-4A33-B48C-D030197D1382}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BradyCodeChallenge.Infrastructure</RootNamespace>
+    <AssemblyName>BradyCodeChallenge.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\ICalculateData.cs" />
+    <Compile Include="Interfaces\ISerializer.cs" />
+    <Compile Include="Interfaces\IWatcher.cs" />
+    <Compile Include="Models\Input\Coal.cs" />
+    <Compile Include="Models\Input\CoalGenerator.cs" />
+    <Compile Include="Models\Input\Day.cs" />
+    <Compile Include="Models\Input\Gas.cs" />
+    <Compile Include="Models\Input\GasGenerator.cs" />
+    <Compile Include="Models\Input\Generation.cs" />
+    <Compile Include="Models\Input\GenerationReport.cs" />
+    <Compile Include="Models\Input\Wind.cs" />
+    <Compile Include="Models\Input\WindGenerator.cs" />
+    <Compile Include="Models\Output\ActualHeatRates.cs" />
+    <Compile Include="Models\Output\Day.cs" />
+    <Compile Include="Models\Output\GenerationOutput.cs" />
+    <Compile Include="Models\Output\Generator.cs" />
+    <Compile Include="Models\Output\MaxEmissionGenerators.cs" />
+    <Compile Include="Models\Output\Totals.cs" />
+    <Compile Include="Models\ReferenceDataMap\EmissionFactor.cs" />
+    <Compile Include="Models\ReferenceDataMap\ReferenceDataMap.cs" />
+    <Compile Include="Models\ReferenceDataMap\ValueFactor.cs" />
+    <Compile Include="Models\ReferenceData\EmissionsFactor.cs" />
+    <Compile Include="Models\ReferenceData\Factors.cs" />
+    <Compile Include="Models\ReferenceData\ReferenceData.cs" />
+    <Compile Include="Models\ReferenceData\ValueFactor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\bin\Debug\BradyCodeChallenge.Common.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\bin\Debug\BradyCodeChallenge.Common.pdb
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\bin\Debug\BradyCodeChallenge.Infrastructure.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\bin\Debug\BradyCodeChallenge.Infrastructure.pdb
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\obj\Debug\BradyCodeChallenge.Common.csprojAssemblyReference.cache
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\obj\Debug\BradyCodeChallenge.Common.csproj.CoreCompileInputs.cache
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\obj\Debug\BradyCodeChallenge.Common.csproj.CopyComplete
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\obj\Debug\BradyCodeChallenge.Common.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Common\obj\Debug\BradyCodeChallenge.Common.pdb
