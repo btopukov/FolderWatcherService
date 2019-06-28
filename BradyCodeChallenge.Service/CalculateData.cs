@@ -36,6 +36,11 @@ namespace BradyCodeChallenge.Service
                 var xmlInputData = File.ReadAllText(fileSystemEventArgs.FullPath);
                 GenerationReport generationReport = _serializer.Deserialize<GenerationReport>(xmlInputData);
 
+                if (generationReport == null)
+                {
+                    throw new FileLoadException("Provided file was not loaded successfully, please check the format of the file!");
+                }
+
                 var xmlReferenceData = File.ReadAllText(referenceDataPath);
                 ReferenceData referenceData = _serializer.Deserialize<ReferenceData>(xmlReferenceData);
 
