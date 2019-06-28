@@ -1,5 +1,6 @@
 ﻿using System.ServiceProcess;
 using System.Threading;
+using BradyCodeChallenge.Common.Logger;
 using BradyCodeChallenge.Infrastructure.Interfaces;
 
 namespace BradyCodeChallenge.FileWatcherService
@@ -16,12 +17,14 @@ namespace BradyCodeChallenge.FileWatcherService
 
         protected override void OnStart(string[] args)
         {
+            Logger.Info("Thread Start");
             var thread = new Thread(_fileWatcher.Start);
             thread.Start();
         }
 
         protected override void OnStop()
         {
+             Logger.Info("Thread Stop");
             _fileWatcher.Stop();
             Thread.Sleep(1000);
         }

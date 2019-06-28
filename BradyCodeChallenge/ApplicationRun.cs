@@ -6,6 +6,7 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BradyCodeChallenge.Common.Logger;
 using Topshelf;
 
 namespace BradyCodeChallenge

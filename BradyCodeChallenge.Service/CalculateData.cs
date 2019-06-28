@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BradyCodeChallenge.Common.Logger;
 using BradyCodeChallenge.Common.Serializer;
 using BradyCodeChallenge.Infrastructure.Interfaces;
 using BradyCodeChallenge.Infrastructure.Models.Input;
@@ -43,6 +44,7 @@ namespace BradyCodeChallenge.Service
             }
             catch (Exception ex)
             {
+                Logger.Error($"An error occurred when processing your request: {ex.Message}", ex);
                 throw new Exception($"An error occurred when processing your request: {ex.Message}");
             }
         }

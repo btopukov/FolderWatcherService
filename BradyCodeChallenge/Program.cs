@@ -31,10 +31,10 @@ namespace BradyCodeChallenge
         private static IServiceCollection ConfigureServices()
         {
             IServiceCollection services = new ServiceCollection()
-           .AddSingleton<IWatcher, FileWatcher>()
-           .AddSingleton<ISerializer, Serializer>()
-           .AddSingleton<ICalculateData, CalculateData>()
-           .AddTransient<ApplicationRun>();
+                .AddSingleton<IWatcher, FileWatcher>()
+                .AddSingleton<ISerializer, Serializer>()
+                .AddSingleton<ICalculateData, CalculateData>()
+                .AddTransient<ApplicationRun>();
 
             return services;
         }

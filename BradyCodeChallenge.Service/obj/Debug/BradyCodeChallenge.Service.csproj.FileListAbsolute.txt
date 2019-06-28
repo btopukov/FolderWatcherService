@@ -2,8 +2,10 @@ C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\BradyCodeChallenge.Service.pdb
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\BradyCodeChallenge.Common.dll
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\BradyCodeChallenge.Infrastructure.dll
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\log4net.dll
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\BradyCodeChallenge.Common.pdb
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\BradyCodeChallenge.Infrastructure.pdb
+C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\bin\Debug\log4net.xml
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\obj\Debug\BradyCodeChallenge.Service.csprojAssemblyReference.cache
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\obj\Debug\BradyCodeChallenge.Service.csproj.CoreCompileInputs.cache
 C:\Users\btopukov\source\repos\BradyCodeChallenge\BradyCodeChallenge.Service\obj\Debug\BradyCodeChallenge.Service.csproj.CopyComplete

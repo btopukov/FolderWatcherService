@@ -3,6 +3,7 @@ using System.Configuration;
 using System.IO;
 using System.Threading;
 using System.Xml.Serialization;
+using BradyCodeChallenge.Common.Logger;
 using BradyCodeChallenge.Common.Serializer;
 using BradyCodeChallenge.Infrastructure.Interfaces;
 using BradyCodeChallenge.Infrastructure.Models.Input;
@@ -31,6 +32,7 @@ namespace BradyCodeChallenge.FileWatcherService
             _watcher = new FileSystemWatcher(_inputPath);
             _calculateData = calculateData;
             _watcher.Created += WatcherOnCreated;
+            _watcher.Error += WatcherOnError;
         }
 
         public void Start()
@@ -51,7 +53,14 @@ namespace BradyCodeChallenge.FileWatcherService
 
         private void WatcherOnCreated(object sender, FileSystemEventArgs fileSystemEventArgs)
         {
+            Logger.Info($"created new report {fileSystemEventArgs.FullPath}");
             _calculateData.CalculateGenerationOutput(fileSystemEventArgs, _referenceDataPath, _outputPath);
         }
+
+        private void WatcherOnError(object sender, ErrorEventArgs errorEventArgs)
+        {
+           Logger.Error($"error - {errorEventArgs.GetException().Message}");
+        }
+
     }
 }
